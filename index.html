@@ -1020,9 +1020,7 @@
 				</div>
 
 				<div class="row" data-aos="fade-up" data-aos-delay="100">
-
 					<div class="col-lg-6">
-
 						<div class="row">
 							<div class="col-md-12">
 								<div class="info-box">
@@ -1050,111 +1048,86 @@
 					</div>
 
 					<div class="col-lg-6">
-						<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+						<form action="/" class="php-email-form">
 							<div class="form-row">
 								<div class="col form-group">
-									<input type="text" name="name" class="form-control" id="name"
+									<input type="text" name="txtEnquirerName" class="form-control" id="txtEnquirerName"
 										placeholder="Your Name" data-rule="minlen:4"
 										data-msg="Please enter at least 4 chars" />
 									<div class="validate"></div>
 								</div>
+
 								<div class="col form-group">
-									<input type="email" class="form-control" name="email" id="email"
+									<input type="email" class="form-control" name="txtEmail" id="txtEmail"
 										placeholder="Your Email" data-rule="email"
 										data-msg="Please enter a valid email" />
 									<div class="validate"></div>
 								</div>
 							</div>
+
+							<div class="form-row">
+								<div class="col form-group">
+									<input type="text" class="form-control" name="txtEnquirerMobile"
+										id="txtEnquirerMobile" placeholder="Mobile" data-rule="minlen:10"
+										data-msg="Please enter at least 10 chars of Mobile Number" />
+									<div class="validate"></div>
+								</div>
+
+								<div class="col form-group">
+									<input type="text" class="form-control" name="txtSubject" id="txtSubject"
+										placeholder="Subject" data-rule="minlen:4"
+										data-msg="Please enter at least 8 chars of subject" />
+									<div class="validate"></div>
+								</div>
+							</div>
+
 							<div class="form-group">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Subject" data-rule="minlen:4"
-									data-msg="Please enter at least 8 chars of subject" />
+								<textarea class="form-control" name="txtMessage" rows="5" data-rule="required"
+									id="txtMessage" data-msg="Please write something for us"
+									placeholder="Message"></textarea>
 								<div class="validate"></div>
 							</div>
-							<div class="form-group">
-								<textarea class="form-control" name="message" rows="5" data-rule="required"
-									data-msg="Please write something for us" placeholder="Message"></textarea>
-								<div class="validate"></div>
-							</div>
-							<div class="mb-3">
-								<div class="loading">Loading</div>
-								<div class="error-message"></div>
-								<div class="sent-message">Your message has been sent. Thank you!</div>
-							</div>
-							<div class="text-center"><button type="submit">Send Message</button></div>
 						</form>
+
+						<div id="divEmailAlerts" class="mb-3">
+							<div id="divLoading" class="loading">Loading</div>
+							<div id="divErrorMessage" class="error-message">There was an error sending your mail. Please
+								try again later!</div>
+							<div id="divMessageSent" class="sent-message">Your message has been sent. Thank you!</div>
+						</div>
+
+						<div class="text-center mt-3">
+							<button id="btnSubmitForm" class="get-started-btn">
+								Send Message
+							</button>
+						</div>
 					</div>
-
 				</div>
-
 			</div>
 		</section><!-- End Contact Section -->
-
 	</main><!-- End #main -->
 
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
-
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
-
-					<div class="col-lg-5 col-md-12 footer-contact">
-						<h3>Dr. Ayurveda<span>.</span></h3>
-						<p>
-							A108 Adam Street <br>
-							New York, NY 535022<br>
-							United States <br><br>
-							<strong>Phone:</strong> +919907856800 <br>
-							<strong>Email:</strong> support@drayurvedicsexologist.com<br>
-						</p>
-					</div>
-
-					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Useful Links</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-4 col-md-6 footer-links">
-						<h4>Our Services</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-						</ul>
-					</div>
+					&copy; Copyright <strong><span>Dr. Ayurveda</span></strong>. All Rights Reserved
 				</div>
 			</div>
 		</div>
 
-		<div class="container d-md-flex py-4">
-
-			<div class="mr-md-auto text-center text-md-left">
-				<div class="copyright">
-					&copy; Copyright <strong><span>Fifteen</span></strong>. All Rights Reserved
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="social-links text-center text-md-right pt-3 pt-md-0">
+						<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+						<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+						<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+						<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+					</div>
 				</div>
-				<div class="credits">
-					<!-- All the links in the footer should remain intact. -->
-					<!-- You can delete the links only if you purchased the pro version. -->
-					<!-- Licensing information: https://bootstrapmade.com/license/ -->
-					<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-
-				</div>
-			</div>
-			<div class="social-links text-center text-md-right pt-3 pt-md-0">
-				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-				<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-				<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-				<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
 			</div>
 		</div>
 	</footer><!-- End Footer -->
@@ -1175,7 +1148,9 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/constants.js"></script>
+	<script src="assets/js/framework.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>
