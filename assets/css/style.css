@@ -68,6 +68,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+	padding: 0 0 20px 0;
+	font-size: 18px;
+	height: 50px;
+	transition: all 0.5s;
+	background: rgba(26, 24, 22, 0.8);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#topbar.topbar-transparent {
+	background: transparent;
+}
+
+#topbar.topbar-scrolled {
+	top: -40px;
+}
+
+#topbar i {
+	color: #e03a3c;
+}
+
+#topbar i+i {
+	margin-left: 15px;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
