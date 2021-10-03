@@ -2390,6 +2390,25 @@ section {
   z-index: 100;
 }
 
+.floating2 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 10px;
+  background-color: #e03a3c;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
 .float-button {
+  margin-top: 16px;
+}
+
+.float-button2 {
   margin-top: 16px;
 }
