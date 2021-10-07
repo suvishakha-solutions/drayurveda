@@ -2,6 +2,10 @@ $(document).ready(function ()
 {
 	$("#divEmailAlerts").hide();
 	$("#btnSubmitForm").on("click", sendEmail);
+
+	$('.carousel').carousel({
+		interval: 2000
+	});
 });
 
 async function sendEmail()
@@ -136,8 +140,8 @@ async function sendEmail()
 		</html>
 	`;
 
-	var params = [ "sender", "recipient", "subject", "body" ];
-	var values = [ sender, recipient, enquirerSubject, emailContent ];
+	var params = ["sender", "recipient", "subject", "body"];
+	var values = [sender, recipient, enquirerSubject, emailContent];
 
 	var dataString = createJSON(params, values);
 
