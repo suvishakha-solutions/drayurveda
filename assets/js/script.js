@@ -148,7 +148,6 @@ async function sendEmail()
 	await promisingAjaxCall(url, "POST", dataString, "application/json")
 		.then((data) =>
 		{
-			console.log(data);
 			$("#divEmailAlerts").show();
 			$("#divLoading").hide();
 			$("#divErrorMessage").hide();
@@ -156,7 +155,6 @@ async function sendEmail()
 		})
 		.catch((data) =>
 		{
-			console.log(data);
 			$("#divEmailAlerts").show();
 			$("#divLoading").hide();
 			$("#divErrorMessage").show().slideUp();
