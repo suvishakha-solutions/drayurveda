@@ -15,7 +15,7 @@ async function sendEmail()
 	let recipient = {};
 
 	const enquirerName = $("#txtEnquirerName").val();
-	const sender = "suvishakha.tech@gmail.com";
+	const sender = "drayurveda";
 	recipient.email = $("#txtEmail").val();
 	const enquirerSubject = $("#txtSubject").val();
 	const enquirerMobile = $("#txtEnquirerMobile").val();
@@ -148,6 +148,7 @@ async function sendEmail()
 	await promisingAjaxCall(url, "POST", dataString, "application/json")
 		.then((data) =>
 		{
+			console.log(data);
 			$("#divEmailAlerts").show();
 			$("#divLoading").hide();
 			$("#divErrorMessage").hide();
@@ -155,6 +156,7 @@ async function sendEmail()
 		})
 		.catch((data) =>
 		{
+			console.log(data);
 			$("#divEmailAlerts").show();
 			$("#divLoading").hide();
 			$("#divErrorMessage").show().slideUp();
